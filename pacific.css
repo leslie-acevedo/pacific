@@ -1,12 +1,13 @@
+* { box-sizing: border-box; }
 body {
-background-color: #90C7E3;
-background-image: linear-gradient (to bottom, #FFFFFF, #90C7E3);
-background-repeat: no-repeat;
+background-color: #EAEAEA;
 color: #666666;
 font-family: Verdana, Arial, sans-serif;
 }
-#wrapper{
-backhround-color: #FFFFFF;
+#wrapper {
+background-color: #FFFFFF;
+background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+background-repeat: no-repeat;
 margin-left: auto;
 margin-right: auto;
 width: 80%;
@@ -15,17 +16,20 @@ max-width: 2048px;
 box-shadow: 3px 3px 3px #777;
 }
 header {
-background-color #002171;
-background-image: url(sunset.jpg);
-background-position: right;
-background-repeat: no-repeat;
+background-color: #002171;
 color: #FFFFFF;
 font-family: Georgia, serif;
-height: 72px;
+height: 120px;
 }
+header a { text-decoration: none; }
+header a:link { color: #FFFFFF; }
+header a:visited { color: #FFFFFF; }
+header a:hover { color: #90C7E3; }
 h1 {
+font-size: 3em;
+letter-spacing: 0.25em;
 text-align: center;
-  padding-top: .5em;
+padding-top: .5em;
 }
 h2 {
 color: #1976D2;
@@ -33,19 +37,30 @@ font-family: georgia, serif;
 }
 h3 { font-family: Gergia, serif; }
 nav {
+float: left;
+font-size: 1.2em;
 font-weight: bold;
-padding-top: .5em;
-padding-right: .5em;
-padding-bottom: .5em;
-text-align: center;
+padding: 0;
+position: fixed;
+width: 160px;
 }
 nav a { text-decoration: none; }
+nav a:link { color: #5C7FA3; }
+nav a:visited {color: #344873;}
+nav a:hoover {color: #A52A2A; }
+nav ul {
+list-style-type: none;
+padding-left: 1em;
+}
 main {
+background-color: #FFF;
+display: block;
+margin-left: 170px;
+overflow: auto;
 padding-left: 2em;
 padding-right: 2em;
-display: block;
 }
-ft {
+dt {
 color: #002171;
 font-weight: bold;
 }
@@ -58,18 +73,33 @@ height: 300px;
 background-image: url(coast.jpg);
 background-repeat: no-repeat;
 background-size: 100% 100%;
+margin-left: 170px;
 }
-
-#yurthero { height: 300px;
+#yurthero { 
+height: 300px;
+background-image: url(yurt.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+margin-left: 170px;
+}
+#trailhero { 
+height: 300px;
 background-image: url(trail.jpg);
 background-repeat: no-repeat;
-background-size: 100% 100%; }
-#trailhero { height: 300px;
-background-image: url(trail.jpg);
-background-repeat: no-repeat;
-background-size: 100% 100%; }
-footer { font-size: .70em;
+background-size: 100% 100%;
+margin-left: 170px;
+}
+section {
+float: left;
+padding-left: 2em;
+padding-right: 2em;
+width: 33%;
+}
+footer { 
+background-color: #FFF;
+font-size: .70em;
 font-style: italic;
-text-align: center;
+margin-left: 170px;
 padding: 1em;
+text-align: center;
 }
